@@ -17,7 +17,7 @@ var fromBegining = true;
 var isPlayer = false;
 var getTime;
 var soundStats = true;
-var videoID = 107493;
+var Encoded = 107496.141592653589793;
 var currentWidthOfSite;
 //var vidPlayer;
 var showLogoStats;
@@ -38,7 +38,8 @@ var Q1_Stats = true;
 var Q2_Stats = true;
 var Q3_Stats = true;
 
-var calculatedID = Number(videoID) / 3;
+
+var calculatedID = Number(Encoded - Math.PI) / 3;``
 //console.log(calculatedID);
 
 
@@ -178,7 +179,8 @@ function init (all) {
 		}
 	  }
 
-
+	// ------------------------------------------------------
+	// Onmivir Player init code with some custom stuff in it
 
 	var OI = new OmniVirtiFrame ({
 		id: calculatedID,
@@ -276,7 +278,13 @@ function init (all) {
 		bgstyle: "iframeBG-style"
 	});
 
+	// -------------- end of Onmivirt init code -----------------
 
+
+
+
+
+	
 
 	var playVideo = function () {
 		console.log("play video now");
@@ -295,14 +303,6 @@ function init (all) {
 		pauseBtn.obj.style.visibility = "hidden";
 		videoTracking("pause");
 	}
-
-
-	  
-
-
-  
- 
-   
 
 
 }

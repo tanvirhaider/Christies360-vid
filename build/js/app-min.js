@@ -709,7 +709,7 @@ var fromBegining = true;
 var isPlayer = false;
 var getTime;
 var soundStats = true;
-var videoID = 107493;
+var Encoded = 107496.141592653589793;
 var currentWidthOfSite; //var vidPlayer;
 
 var showLogoStats;
@@ -727,7 +727,8 @@ var Q1, Q2, Q3;
 var Q1_Stats = true;
 var Q2_Stats = true;
 var Q3_Stats = true;
-var calculatedID = Number(videoID) / 3; //console.log(calculatedID);
+var calculatedID = Number(Encoded - Math.PI) / 3;
+""; //console.log(calculatedID);
 
 function videoTracking(what) {
   //console.log("SWITCH value: ",what);
@@ -870,7 +871,9 @@ function init(all) {
 
       OmniVirt.api.sendMessage('audio', 1, document.getElementById("ado-" + calculatedID));
     }
-  }
+  } // ------------------------------------------------------
+  // Onmivir Player init code with some custom stuff in it
+
 
   var OI = new OmniVirtiFrame({
     id: calculatedID,
@@ -968,7 +971,7 @@ function init(all) {
     },
     type: "VIDEO_MOBILE_NON_FLITE",
     bgstyle: "iframeBG-style"
-  });
+  }); // -------------- end of Onmivirt init code -----------------
 
   var playVideo = function playVideo() {
     console.log("play video now");
