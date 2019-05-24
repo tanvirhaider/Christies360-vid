@@ -33,6 +33,7 @@ class Sprite {
         if (data.image){
            // var imgW = data.width +'px';
            // var imgH = data.height +'px';
+           
     
             var style = obj.style;
            // style.width = imgW;

@@ -617,13 +617,6 @@
 		"oA": 1,
 		"oAP": "/build/build",
 		"oF": 0
-		},
-	"/christies-flexxl-360.zip": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "/build/christies-flexxl-360.zip",
-		"oF": 0
 		}
 	},
 "hooks": [
