@@ -1,0 +1,22 @@
+define(
+    {
+    SV: {
+    svData:[
+            {
+                svKey:"advertiser_name",
+                svType:"string",
+                value:"Sothebys"
+            },
+            {
+                svKey:"adType",
+                svType:"string",
+                value:"universal"
+            },
+            {
+                svKey:"phase",
+                svType:"string",
+                value:"2"
+            }
+        ]
+    }
+});

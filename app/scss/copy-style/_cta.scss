@@ -1,0 +1,63 @@
+
+
+
+.screen_still_cta-style {
+    font-size: 16px;
+    position: absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border: 1px solid $fontColor;
+    font-family: "benton-sans-condensed";
+   // font-family: 'BentonSansComp Book';
+  //  letter-spacing: 0.5px;
+    //font-weight:400;
+    color: $fontColor;
+    cursor: pointer;
+    width: calc( 290px / 2);
+    height: 40px;
+    box-sizing: border-box;
+    z-index: 99999;
+    background-size: contain;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    left: $desktopContentPadding;
+    bottom: 45px;
+    transition: ease 0.3s;
+   
+
+    &:hover {
+       background-color: rgb(255, 255, 255);
+       color: black;
+    }
+
+    @include breakpoint(small) {
+        left: 35px;
+        bottom: 35px;
+        color: white;
+        border: 1px solid white;
+        text-shadow: rgba(0,0,0,0.5) 2px 2px;
+
+        &:hover {
+            background-color: rgb(255, 255, 255);
+            color: black;
+            text-shadow: unset;
+         }
+    }
+
+    @include breakpoint(portrait) {
+        left: 35px;
+        bottom: 35px;
+    }
+
+    @include breakpoint(mobile) {
+       // left: 20px;
+      //  bottom: 25px;
+      text-shadow: unset;
+      bottom: calc(13% - 30px);
+        left: 0px;
+        right: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,41 @@
+
+
+
+
+#content {
+    #ado-3dxplayer {
+        .ado-scene {
+            .ado-scene {
+                .ado-boundbox {
+                    .ado-boundbox {
+                        canvas {
+                            border: unset;
+                            background-color: blue;
+                        }
+                    }
+
+                    .ado-pointer-events-for-children {
+                        .ado-boundbox ado-handle  {
+                            border: unset;
+                        }
+                    }
+
+                    .ado-settings-inactive ado-toolbar-inactive {
+                        .ado-floating-unmute-button {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+#ado-floating-unmute-button {
+    display: none !important;
+    opacity: 0;
+    visibility: hidden;
+    background: black;
+}
