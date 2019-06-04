@@ -13,8 +13,7 @@ class OmniVirtiFrame {
         iframe.setAttribute('webkitAllowFullScreen', appdata.allowFullScreen);
         iframe.setAttribute('mozallowfullscreen', appdata.allowFullScreen);
         iframe.setAttribute('allowFullScreen', appdata.allowFullScreen);
-
-        iframe.setAttribute("src", "//www.vroptimal-3dx-assets.com/content/" + appdata.id
+        iframe.setAttribute("src", "//" + appdata.domain + "/content/" + appdata.id
             + "?id=" + appdata.id
             + "&player=" + appdata.player
             + "&control=" + appdata.control
@@ -61,6 +60,18 @@ class OmniVirtiFrame {
             });
         }
 
+        if (appdata.onLongitude) {
+            OmniVirt.api.receiveMessage(window, "longitude", function(type, data, iframe) {
+                appdata.onLongitude.function (data);
+            });
+        }
+
+        if (appdata.onLatitude) {
+            OmniVirt.api.receiveMessage(window, "latitude", function(type, data, iframe) {
+                appdata.onLatitude.function (data);
+            });
+        }
+
         if (appdata.onAudio) {
             OmniVirt.api.receiveMessage(window, "audio", function(type, data, iframe) {
                 appdata.onAudio.function (data);
@@ -70,6 +81,12 @@ class OmniVirtiFrame {
         if (appdata.onLoaded) {
             OmniVirt.api.receiveMessage(window, "loaded", function(type, data, iframe) {
                 appdata.onLoaded.function (iframe);
+            });
+        }
+
+        if (appdata.onQuality) {
+            OmniVirt.api.receiveMessage(window, "quality", function(type, data, iframe) {
+                appdata.onQuality.function (data);
             });
         }
     }

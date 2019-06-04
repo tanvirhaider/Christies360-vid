@@ -71,17 +71,26 @@ function initializeGlobalVariables() {
 
 function setCreativeElements() {
 
-	if (!runOnce) {
-		initFXL(window);
+	
+	if (adData.type == "FXL") { 
+		if (!runOnce) { initFXL(window);}
+		sizeContentArea(null);
+	
+	}
+	if (adData.type == "FF") { 
+		if (!runOnce) { initFF(window);}
+		sizeContentAreaFFMobile();
+	
 	}
 
-	sizeContentArea(null);
+	
 
 }
 
 // Size creative area per available total area so 2:3 aspect ratio creative content will not overflow the available screen space.
 // The parameter "data" will be populated only by the response from the custom scripts "creativeResize" event.  When calling this function from manually pass "null".  When accessing the "data" parameter make sure to do a check its existance prior to accessing.
 function sizeContentArea(data) {
+	console.log("sizme content area");
 	var adWrapper = document.getElementById("willow-ad-stage");
 	var adWrappoerWidth = adWrapper.offsetWidth;
 	var adWrappoerHeight = adWrapper.offsetHeight;
@@ -110,6 +119,12 @@ function sizeContentArea(data) {
 	}
 
 	//console.log("final height: ",finalHeight);
+}
+
+function sizeContentAreaFFMobile () {
+	var adWrapper = document.getElementById("willow-ad-stage");
+	adWrapper.style.maxHeight = "380px";
+	adWrapper.style.height = "380px";
 }
 
 

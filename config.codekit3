@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "28905",
 "files": {
+	"/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/build/.gitignore",
+		"oF": 0
+		},
 	"/app/assets/fonts/BentonSansComp-Bold.eot": {
 		"cB": 0,
 		"ft": 8192,
@@ -242,6 +249,39 @@
 		"oAP": "/build/assets/fonts/FreightBigProMedium-Regular.woff2",
 		"oF": 0
 		},
+	"/app/assets/images/360-bg.png": {
+		"ft": 32768,
+		"iS": 6535,
+		"oA": 0,
+		"oAP": "/build/assets/images/360-bg.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/app/assets/images/360-indicator.png": {
+		"ft": 32768,
+		"iS": 1886,
+		"oA": 0,
+		"oAP": "/build/assets/images/360-indicator.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/app/assets/images/btn-sound-off.png": {
+		"ft": 32768,
+		"iS": 8450,
+		"oA": 0,
+		"oAP": "/build/assets/images/btn-sound-off.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/app/assets/images/btn-sound-off.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -251,6 +291,17 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"/app/assets/images/btn-sound-on.png": {
+		"ft": 32768,
+		"iS": 10519,
+		"oA": 0,
+		"oAP": "/build/assets/images/btn-sound-on.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"/app/assets/images/btn-sound-on.svg": {
 		"ft": 2097152,
@@ -273,6 +324,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/app/assets/images/copy-2x.png": {
+		"ft": 32768,
+		"iS": 83912,
+		"oA": 0,
+		"oAP": "/build/assets/images/copy-2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/app/assets/images/copy.png": {
 		"ft": 32768,
 		"iS": 47433,
@@ -282,6 +344,17 @@
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
+		"q": 100
+		},
+	"/app/assets/images/cover-mobile.jpg": {
+		"ft": 16384,
+		"iS": 99368,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/images/cover-mobile.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/app/assets/images/cover.jpg": {
@@ -295,14 +368,25 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/app/assets/images/cover_copy-mobileff.jpg": {
+		"ft": 16384,
+		"iS": 267057,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/images/cover_copy-mobileff.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/app/assets/images/cta.png": {
 		"ft": 32768,
-		"iS": 1739,
+		"iS": 3547,
 		"oA": 0,
 		"oAP": "/build/assets/images/cta.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -315,6 +399,72 @@
 		"oF": 1,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"/app/assets/images/ff-copy.png": {
+		"ft": 32768,
+		"iS": 52324,
+		"oA": 0,
+		"oAP": "/build/assets/images/ff-copy.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/app/assets/images/ff-mobile-cover.jpg": {
+		"ft": 16384,
+		"iS": 60772,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/images/ff-mobile-cover.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/app/assets/images/ffm-cover.jpg": {
+		"ft": 16384,
+		"iS": 234496,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/images/ffm-cover.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/app/assets/images/fxl-desktop-cover.jpg": {
+		"ft": 16384,
+		"iS": 204365,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/images/fxl-desktop-cover.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/app/assets/images/fxl-mobile-cover.jpg": {
+		"ft": 16384,
+		"iS": 120044,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/images/fxl-mobile-cover.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/app/assets/images/initialCopy.png": {
+		"ft": 32768,
+		"iS": 6127,
+		"oA": 0,
+		"oAP": "/build/assets/images/initialCopy.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
 		"q": 100
 		},
 	"/app/assets/images/pause-btn.png": {
@@ -339,6 +489,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/app/assets/images/play-btn2.png": {
+		"ft": 32768,
+		"iS": 23858,
+		"oA": 0,
+		"oAP": "/build/assets/images/play-btn2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/app/config.js": {
 		"ft": 64,
 		"ma": 0,
@@ -356,42 +517,12 @@
 		"oAP": "/build/index.html",
 		"oF": 1
 		},
-	"/app/js/_GlobalVars.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "/build/js/_GlobalVars-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/app/js/_Sizmek-Custom-Tracking.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "/build/js/_Sizmek-Custom-Tracking-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/app/js/_Sizmek.2.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
 		"oA": 1,
 		"oAP": "/build/js/_Sizmek.2-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/app/js/_Sizmek.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "/build/js/_Sizmek-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -413,16 +544,6 @@
 		"oA": 1,
 		"oAP": "/build/js/OmniVirt-Player-min.js",
 		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/app/js/sizmek.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "/build/js/sizmek-min.js",
-		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},
@@ -478,6 +599,45 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/build/scss/_common.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/app/scss/_cta.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/scss/_cta.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/app/scss/_ff.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/scss/_ff.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/app/scss/_flexXL.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/scss/_flexXL.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -547,58 +707,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/app/scss/copy-style/_cta.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/build/scss/copy-style/_cta.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/app/scss/copy-style/_h1.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/build/scss/copy-style/_h1.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/app/scss/copy-style/_h2.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/build/scss/copy-style/_h2.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/app/scss/copy-style/_logo.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/build/scss/copy-style/_logo.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"/app/scss/style.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -612,10 +720,178 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/archive/flexframe-v5.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/build/archive/flexframe-v5.zip",
+		"oF": 0
+		},
+	"/archive/flexframe-v6.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/build/archive/flexframe-v6.zip",
+		"oF": 0
+		},
+	"/archive/flexframe-v7.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/build/archive/flexframe-v7.zip",
+		"oF": 0
+		},
+	"/archive/flexXL-v2.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/build/archive/flexXL-v2.zip",
+		"oF": 0
+		},
+	"/archive/flexxl-v3.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/build/archive/flexxl-v3.zip",
+		"oF": 0
+		},
+	"/archive/flexxl-v4.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/build/archive/flexxl-v4.zip",
+		"oF": 0
+		},
+	"/archive/flexxl-v5.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/build/archive/flexxl-v5.zip",
+		"oF": 0
+		},
+	"/archive/flexxl-v6.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/build/archive/flexxl-v6.zip",
+		"oF": 0
+		},
+	"/archive/flexxl-v7.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/build/archive/flexxl-v7.zip",
+		"oF": 0
+		},
+	"/archive/mobile-ff-v0.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/build/archive/mobile-ff-v0.zip",
+		"oF": 0
+		},
+	"/archive/mobile-ff-v01.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/build/archive/mobile-ff-v01.zip",
+		"oF": 0
+		},
 	"/build": {
 		"ft": 65536,
 		"oA": 1,
 		"oAP": "/build/build",
+		"oF": 0
+		},
+	"/ff-v10.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/build/ff-v10.zip",
+		"oF": 0
+		},
+	"/ff-v12.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/build/ff-v12.zip",
+		"oF": 0
+		},
+	"/ff-v13.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/build/ff-v13.zip",
+		"oF": 0
+		},
+	"/ff-v14.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/build/ff-v14.zip",
+		"oF": 0
+		},
+	"/ff-v15.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/build/ff-v15.zip",
+		"oF": 0
+		},
+	"/ff-v9.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/build/ff-v9.zip",
+		"oF": 0
+		},
+	"/flexxl-v8.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/build/flexxl-v8.zip",
+		"oF": 0
+		},
+	"/fxl-v10.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/build/fxl-v10.zip",
+		"oF": 0
+		},
+	"/fxl-v11.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/build/fxl-v11.zip",
+		"oF": 0
+		},
+	"/fxl-v12.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/build/fxl-v12.zip",
+		"oF": 0
+		},
+	"/fxl-v13.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/build/fxl-v13.zip",
+		"oF": 0
+		},
+	"/fxl-v15.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/build/fxl-v15.zip",
+		"oF": 0
+		},
+	"/fxl-v9.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/build/fxl-v9.zip",
 		"oF": 0
 		}
 	},

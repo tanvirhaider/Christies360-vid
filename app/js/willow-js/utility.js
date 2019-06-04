@@ -49,35 +49,52 @@ var fileSize = function (whichFile,callbackfunc) {
 }
 
 
-// function createOmniVirtIframe (data) {
-// 	console.log("create omnivirt video");
-// 	var container = data.container;
-// 	var videoFile = data.id;
-// 	var CUSTOM_PLAYER_PATH = "//static.vroptimal-3dx-assets.com/manual_upload/2018-05+nyt-3d/omnivirt_custom_nyt_3d.html";
-// 	var CUSTOM_PLAYER_P2 = "//www.vroptimal-3dx-assets.com/manual_upload/2018-05+nyt-3d/omnivirt_custom_nyt_3d.html/";
-// 	var AUTO_PLAY = 'false';
-// 	var SITE_URL = encodeURIComponent(window.location.href);
-// 	//var TYPE = 'VIDEO_MOBILE_NON_FLITE';
-// 	var TYPE = '';
-// 	var WIDTH = '100%';
-// 	var HEIGHT = '100%';
-// 	//var url = CUSTOM_PLAYER_PATH + "?id=" + videoFile + "&autoplay=" + AUTO_PLAY + "&control=false&referer=" + SITE_URL + "&type=" + TYPE;
-// 	//var url = "//www.vroptimal-3dx-assets.com/content/"+videoFile+"?player=true" + "&control=" + data.control + "&autoplay=" + data.autoplay + "&referer=" + SITE_URL + "&type=" + TYPE;
 
-// 	var iframeContainer = container;
-// 	iframeContainer.style.display = "block";
-// 	var iframe = document.createElement('iframe');
-// 	iframe.setAttribute('id', "ado-" + videoFile );
-// 	iframe.setAttribute('frameborder', "0");
-// 	iframe.setAttribute('webkitAllowFullScreen',data.allowFullScreen);
-// 	iframe.setAttribute('mozallowfullscreen',data.allowFullScreen);
-// 	iframe.setAttribute('allowFullScreen',data.allowFullScreen);
-// 	//iframe.setAttribute("src",CUSTOM_PLAYER_P2  + "?id=" + videoFile + "&player=" + data.player + "&control=" + data.control + "&autoplay=" + data.autoplay + "&referer=" + SITE_URL + "&type=" + TYPE);
-// 	iframe.setAttribute("src","//www.vroptimal-3dx-assets.com/content/" + videoFile + "?id=" + videoFile + "&player=" + data.player + "&control=" + data.control + "&autoplay=" + data.autoplay + "&audio=" + data.audio + "&referer=" + SITE_URL + "&type=" + TYPE);
-// 	//console.log(url);
-// 	//iframe.setAttribute("src",url);
-// 	iframeContainer.appendChild(iframe);
-// 	var iframeBG = document.createElement("iframeBG");
-// 	iframeBG.className += "iframeBG-style";
-// 	iframeContainer.appendChild(iframeBG);
-// }
+
+
+
+function detectIE() {
+	var ua = window.navigator.userAgent;
+  
+	// Test values; Uncomment to check result …
+  
+	// IE 10
+	// ua = 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)';
+	
+	// IE 11
+	// ua = 'Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko';
+	
+	// Edge 12 (Spartan)
+	// ua = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36 Edge/12.0';
+	
+	// Edge 13
+	// ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586';
+  
+	var msie = ua.indexOf('MSIE ');
+	if (msie > 0) {
+	  // IE 10 or older => return version number
+	  return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+	}
+  
+	var trident = ua.indexOf('Trident/');
+	if (trident > 0) {
+	  // IE 11 => return version number
+	  var rv = ua.indexOf('rv:');
+	  return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+	}
+  
+	var edge = ua.indexOf('Edge/');
+	if (edge > 0) {
+	  // Edge (IE 12+) => return version number
+	  return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+	}
+  
+	// other browser
+	return false;
+  }
+  
+  
+ 
+
+  
+

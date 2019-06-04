@@ -1,0 +1,220 @@
+
+
+
+
+
+.vidContainer-Style {
+    position: absolute;
+    //width: calc(100% - 300px);
+    width: 100%;
+    height: 100%;
+    right: 0px;
+    pointer-events: auto;
+   
+
+    @include breakpoint(small) {
+       // width: calc(100% - 300px);
+        right: 0px;
+        left: unset;
+    }
+
+    @include breakpoint(mobile) {
+        width: 100%;
+        left: 0px;
+        height: calc(100%);
+     }
+
+     @include breakpoint(medium) {
+       // width: calc(100% - 300px);
+        right: 0px;
+        left: unset;
+    }
+
+    iframe {
+        position: absolute;
+        width: 100%;
+        height: 300px;
+       // pointer-events: none;
+
+        
+    }
+
+
+    .videoCover-Style {
+        position: absolute;
+        background-image: url(../assets/images/cover.jpg);
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+
+        opacity: 0;
+        animation: fadein 1s forwards 0s;
+
+        @include breakpoint(mobile) {
+            background-image: url(../assets/images/ff-mobile-cover.jpg);
+            background-position: 50% 70%;
+         }
+    }
+    
+    .playBtn-Style {
+        position: absolute;
+        background-image: url(../assets/images/play-btn2.png);
+        background-repeat: no-repeat;
+       // background-image: url($playBtn);
+        width: 40px;
+        height: 40px;
+        background-size: contain;
+        left: 10px;
+       // right: 0px;
+       // top: 60px;
+        bottom: 30px;
+      //  margin: auto;
+        z-index: 999;
+        pointer-events: auto;
+
+        @include breakpoint(mobile) {
+          //  background-image: url(../assets/images/ff-mobile-cover.jpg);
+          //  background-position: 50% 70%;
+          right: 30px;
+          left: unset;
+          height: 40px;
+          width: 150px;
+          background-position: 100% 100%;
+         }
+    }
+
+    .pauseBtn-Style {
+        position: absolute;
+        //background-image: url(../assets/images/pause-btn.png);
+        background-image: url($pauseBtn);
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        right: 10px;
+        bottom: 25px;
+        visibility: hidden;
+        z-index: 999;
+        pointer-events: auto;
+    }
+
+    .speakerBtn-style {
+        position: absolute;
+        //background-image: url(../assets/images/btn-sound-on.svg);
+        background-image: url($soundon);
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        right: 10px;
+        top: 10px;
+       // visibility: hidden;
+        z-index: 999;
+        display: none;
+        pointer-events: auto;
+    }
+
+    .muteBtn-style {
+        position: absolute;
+        //background-image: url(../assets/images/btn-sound-off.svg);
+        background-image: url($soundoff);
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        right: 10px;
+        top: 10px;
+     //   visibility: hidden;
+        z-index: 999;
+        display: none;
+        pointer-events: auto;
+    }
+
+    .Panaromaicon-style {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+       // background-color: white;
+        //background-image: url(../assets/images/360-bg.png);
+        background-image: url($VRring);
+        background-repeat: no-repeat;
+        background-size: contain;
+        bottom: 55px;
+        right: 10px;
+        z-index: 999;
+        display: none;
+        opacity: 0;
+        animation: fadein 1s forwards 0s;
+        pointer-events: none;
+
+
+        .PanaromaIndocator-style {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: contain;
+           // background-image: url(../assets/images/360-indicator.png);
+           background-image: url($VReyes);
+
+        }
+    }
+
+    .introCopy-style {
+        position: absolute;
+        z-index: 999;
+        width: 100%;
+        height: 80px;
+        top: calc(50% - (80px / 2));
+        //background-image: url(../assets/images/initialCopy.png);
+        background-image: url($initCopy);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50% 50%;
+        animation: fadein 1s forwards 0s;
+        pointer-events: none;
+        display: none;
+    }
+}
+
+.copyContainer-Style {
+    position: absolute;
+    //background-image: url(../assets/images/copy-2x.png);
+  //  background-image: url($copyDesktop);
+    height: 100%;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    //pointer-events: none;
+    top: 0px;
+    bottom: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 99;
+   // background-color: rgba(0,0,0,0.8);
+    opacity: 0;
+    animation: fadein 1s forwards 0s;
+
+    @include breakpoint(mobile) {
+        width: 100%;
+        left: 20px;
+        right: unset;
+        width: 257px;
+        height: 200px;
+        bottom: 10px;
+        top: unset;
+        background-size: contain;
+        background-position: 0% 0%;
+       // background-image: url(../assets/images/copy-mobile-2x.png);
+        //background-image: url($copyMobile);
+        background-image: url(../assets/images/ff-copy.png)
+     }
+    
+    @include breakpoint(small) {
+        width: 300px;
+    }
+
+}
